@@ -1,5 +1,7 @@
 #simplr-smoothscroll
 
+##[DEMO](http://simov.github.io/simplr-smoothscroll/examples/demo1.html)
+
 ##Requirements
 [jquery-mousewheel](https://github.com/brandonaaron/jquery-mousewheel/)
 
