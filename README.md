@@ -17,7 +17,7 @@ Browsers that support *smooth* scrolling natively may be excluded.
 ```js
 $(function () {
 	var platform = navigator.platform.toLowerCase();
-	if (platform.indexOf('windows') != -1 || platform.indexOf('linux') != -1) {
+	if (platform.indexOf('win') == 0 || platform.indexOf('linux') == 0) {
 		if ($.browser.webkit) {
 			$.srSmoothscroll();
 		}
