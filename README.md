@@ -1,23 +1,66 @@
-#simplr-smoothscroll
 
-##[DEMO](http://simov.github.io/simplr-smoothscroll/examples/demo1.html)
+# simplr-smoothscroll
 
-##Requirements
+
+## [DEMO](http://simov.github.io/simplr-smoothscroll/examples)
+
+
+## Requirements
 [jquery-mousewheel](https://github.com/brandonaaron/jquery-mousewheel/)
 
-##Usage
+
+## Usage
 ```js
 $(function () {
   $.srSmoothscroll({
     // defaults
     step: 55,
     speed: 400,
-    ease: 'swing'
-  });
-});
+    ease: 'swing',
+    target: $('body'),
+    container: $(window)
+  })
+})
 ```
 
-##Browser and os detection
+
+## Enable scrolling for specific widgets
+
+See this [example](http://simov.github.io/simplr-smoothscroll/examples/example-02.html)
+
+```html
+<div id="container1">
+  <div id="widget1">
+    <p>lorem ipsum</p>
+  </div>
+</div>
+<div id="container2">
+  <div id="widget2">
+    <p>lorem ipsum</p>
+  </div>
+</div>
+```
+
+```css
+#container1 { width: 500px; height: 300px; overflow: auto; }
+#container2 { width: 500px; height: 300px; overflow: auto; }
+```
+
+```js
+$(function () {
+  $.srSmoothscroll({
+    target: $('#widget1'),
+    container: $('#container1')
+  })
+  $.srSmoothscroll({
+    target: $('#widget2'),
+    container: $('#container2')
+  })
+})
+```
+
+
+## Browser and os detection
 Browsers that support *smooth* scrolling natively may be excluded.
 ```js
 $(function () {
