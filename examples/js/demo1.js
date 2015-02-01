@@ -1,4 +1,4 @@
 
 $(function () {
-    $.srSmoothscroll();
-});
+  $.srSmoothscroll()
+})
