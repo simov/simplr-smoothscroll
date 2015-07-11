@@ -6,10 +6,12 @@
 
 
 ## Requirements
-[jquery-mousewheel](https://github.com/brandonaaron/jquery-mousewheel/)
+
+[jquery-mousewheel](https://github.com/jquery/jquery-mousewheel)
 
 
 ## Usage
+
 ```js
 $(function () {
   $.srSmoothscroll({
@@ -61,7 +63,9 @@ $(function () {
 
 
 ## Browser and os detection
+
 Browsers that support *smooth* scrolling natively may be excluded.
+
 ```js
 $(function () {
   var platform = navigator.platform.toLowerCase();
@@ -72,4 +76,5 @@ $(function () {
   }
 });
 ```
+
 This will enable *simplr-smoothscroll* only for webkit browsers on windows and linux.
